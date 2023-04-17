@@ -1,4 +1,7 @@
+import { useState } from "react"
+
 export const GifExpertApp = () => {
+  const [categories, setCategories] = useState();
   return (
     <>
         {/* Titulo */}
