@@ -1,7 +1,9 @@
 import { useState } from "react"
 
 export const GifExpertApp = () => {
-  const [categories, setCategories] = useState();
+  const [categories, setCategories] = useState(['one punch']);
+
+  console.log(categories);
   return (
     <>
         {/* Titulo */}
@@ -9,8 +11,7 @@ export const GifExpertApp = () => {
         {/* Input */}
         {/* Listado de gifs */}
         <ol>
-          <li>123</li>
-          <li>abc</li>
+          {categories.}
           <li>xyz</li>
         </ol>
     </>
