@@ -12,6 +12,7 @@ export const GifExpertApp = () => {
         {/* Titulo */}
         <h1>GifExpertApp</h1>
         {/* Input */}
+        <input/>
         {/* Listado de gifs */}
         <button onClick={onAddCatecory}>Agregar</button>
         <ol>
