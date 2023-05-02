@@ -11,23 +11,22 @@ export const GifExpertApp = () => {
     //categories.push(newCategory);
     setCategories([newCategory, ...categories])
   }
-
-  console.log(categories);
+  console.log(categories)
   return (
     <>
-        {/* Titulo */}
         <h1>GifExpertApp</h1>
-        {/* Input */}
         <AddCategory 
               // setCategories={setCategories}
               onNewCategory={(value) => onAddCatecory(value)}      
         />
-          {categories.map((category) => {
+          {
+          categories.map((category) => {
+              return (
                 <GifGrid 
                   key={category}
                   category={category}
                 />
-              })
+              )})
            }
     </>
   )
