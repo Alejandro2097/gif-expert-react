@@ -1,6 +1,7 @@
 import { useState } from "react"
 
 import { AddCategory } from "./components/AddCategory";
+import { GifGrid } from "./components/GifGrid";
 
 export const GifExpertApp = () => {
   const [categories, setCategories] = useState(['one punch', 'Dragon ball']);
@@ -24,12 +25,7 @@ export const GifExpertApp = () => {
         {/* Listado de gifs */}
         <ol>
           {categories.map((category) => {
-                return (
-                  <div key={category}>
-                    <h3>{category}</h3>
-                    <li>{category}</li>
-                  </div>
-                )
+                <GifGrid/>
               })
            }
         </ol>
