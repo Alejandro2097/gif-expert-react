@@ -5,6 +5,7 @@ export const GifGrid = ({category}) => {
     const resp = await fetch(url);
     console.log(resp);
   }
+  getGifs();
   return (
     <>
         <h3>{category}</h3>
