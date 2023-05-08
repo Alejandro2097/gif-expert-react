@@ -1,6 +1,6 @@
-export const GifItem = (props) => {
-  console.log(props);
+export const GifItem = ({title, url}) => {
+  console.log({title, url, id});
   return (
-    <div>ahh</div>
+    
   )
 }
