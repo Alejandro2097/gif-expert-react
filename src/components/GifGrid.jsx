@@ -1,12 +1,12 @@
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 import { getGifs } from '../helpers/getGifs';
-import { useEffect } from 'react';
 
 export const GifGrid = ({category}) => {
   const [counter, setCounter] = useState(10);
   
-  useEffect(() => {
+  useEffect((category) => {
     getGifs(category);
   },[] )
   
@@ -14,7 +14,7 @@ export const GifGrid = ({category}) => {
 
     <>
         <h3>{category}</h3>
-        <p>Hola mundo</p>
+        <h5>{counter}</h5>
         <button onClick={() => setCounter(counter + 1)}>1</button>
     </>
   )
