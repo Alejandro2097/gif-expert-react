@@ -7,3 +7,8 @@ export const GifItem = ({title, url, id}) => {
     </div>
   )
 }
+
+GifItem.propTypes = {
+  title: PropTypes.string,
+  url: PropTypes.string
+}
