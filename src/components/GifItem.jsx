@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 export const GifItem = ({title, url, id}) => {
   console.log({title, url, id});
   return (
