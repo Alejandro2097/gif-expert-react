@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifItem/> debe verificar las propTypes 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Resident evil"
+      src="https://media3.giphy.com/media/ITol7gnfFqLEHGpG0t/giphy-downsized-medium.gif?cid"
+    />
+    <p>
+      Resident evil
+    </p>
+  </div>
+</div>
+`;
