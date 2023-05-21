@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 
-import { GifItem } from "../src/components";
+import { GifItem } from "../../src/components";
 
 describe('Pruebas en <GifItem/>',  () => {
     const url = 'https://media3.giphy.com/media/ITol7gnfFqLEHGpG0t/giphy-downsized-medium.gif?cid';
