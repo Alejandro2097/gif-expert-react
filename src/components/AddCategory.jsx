@@ -9,7 +9,8 @@ export const AddCategory = ({onNewCategory}) => {
     const onSubmit = (event) => {
         console.log('Hola mundo desde onSubmit');
         event.preventDefault();
-        if(inputValue.trim().length <= 1) return;
+        const inputValueTrim = inputValue || "";
+        if(inputValueTrim.trim().length <= 1) return;
         // setCategories(categories => [inputValue, ...categories]);
         onNewCategory(inputValue.trim());
         setInputValue('');

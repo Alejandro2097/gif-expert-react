@@ -22,5 +22,16 @@ describe('Pruebas en <AddCategory/>', () => {
         //screen.debug();
         expect(input.value).toBe('');
         expect(onNewCategory).toHaveBeenCalled();
-    })
+        expect(onNewCategory).toHaveBeenCalledTimes(1);
+        expect(onNewCategory).toHaveBeenCalledWith(inputValue);
+    });
+    test('No debe de llamar el onNewCategory si el input esta vacio', () => {
+        const onNewCategory = jest.fn();
+        render(<AddCategory onNewCategory={onNewCategory}/>);
+        const from = screen.getByRole('form');
+        fireEvent.submit(from);
+        expect(onNewCategory).toHaveBeenCalledTimes(0);
+        expect(onNewCategory).not.toHaveBeenCalled();
+    });
+
 });
