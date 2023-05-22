@@ -31,5 +31,5 @@ export const GifGrid = ({category}) => {
 
 
 GifGrid.propTypes = {
-  category.PropType
+  category: PropTypes
 }
